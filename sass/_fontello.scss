@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello.eot?2290332');
+	src: url('../font/fontello.eot?2290332#iefix') format('embedded-opentype'),
+			 url('../font/fontello.woff?2290332') format('woff'),
+			 url('../font/fontello.ttf?2290332') format('truetype'),
+			 url('../font/fontello.svg?2290332#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+	font-size: 120%; 
+}
+.icon-sliders:before {
+	content: '\e800';
+} /* '' */

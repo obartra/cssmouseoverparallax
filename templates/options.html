@@ -1,0 +1,39 @@
+<ul ng-controller="OptionsCtrl">
+	<h2 class="indent">Settings</h2>
+	<li><label><input type="checkbox" checked ng-model="$root.options.hParallax" />Horizontal Parallax</label></li>
+	<li><label><input type="checkbox" checked ng-model="$root.options.vParallax" />Vertical Parallax</label></li>
+	<li>
+		<label><input type="checkbox" ng-model="$root.options.showGrid"/>Show Active Cell</label>
+	</li>
+	<li>
+		<label class="noleftbox">Horizontal Cells: </label><input type="number" min="2" step="1" max="15" ng-model="$root.options.hCells"/>
+	</li>
+	<li>
+		<label class="noleftbox">Vertical Cells: </label><input type="number" min="2" step="1" max="15" ng-model="$root.options.vCells"/>
+	</li>
+	<li>
+		<label class="noleftbox">Absolute Vertical Movement: </label><input type="number" min="0" step="1" max="100" ng-model="$root.options.vMovementPct"/>%
+	</li>
+	<li>
+		<label class="noleftbox">Absolute Horizontal Movement: </label><input type="number" min="0" step="1" max="100" ng-model="$root.options.hMovementPct"/>%
+	</li>
+	<li>
+		<label class="noleftbox">Delay: </label><input type="number" min="0" step="0.1" max="2" ng-model="$root.options.speed"/>s
+	</li>
+	<li>
+		<label class="noleftbox">Easing: </label><select ng-model="$root.options.easing" ng-options="depth for depth in $root.menuOptions.easing"></select>
+	</li>
+	<h2 class="indent" ng-show="$root.view === 'result'">Items</h2>
+	<li
+		ng-show="$root.view === 'result'"
+		ng-repeat="item in $root.itemList"
+		class="indent item-options"
+		ng-class="{disabled : !showdetails}"
+		ng-mouseenter="item.hover = true"
+		ng-mouseleave="item.hover = false"
+	>
+		<label>depth: </label><select ng-change="change('depth')" ng-model="item.depth" ng-options="depth for depth in $root.menuOptions.depths"></select>
+		<label>top: </label><input type="number" min="0" step="1" ng-model="item.top"/>%
+		<label>left: </label><input type="number" min="0" step="1" ng-model="item.left"/>%
+	</li>
+</ul>

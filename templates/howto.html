@@ -1,0 +1,27 @@
+<section
+	ng-controller="HowToCtrl"
+	class="howto"
+	ng-cloak
+>
+	<p>This demo generates a CSS-only solution for mouseover parallax. We start with a series of divs (cells) with a grid layout. Any images are placed behind these cells but they share the same parent node:</p>
+	<div class="grid">
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div id="ball" class="assets-ball"></div>
+	</div>
+	<p>We then target the images to move when a cell is hovered. The generated CSS rules set margin values for each image, resulting in something like:</p>
+	<pre prism="cellByItemCss" class="language-css"></pre>
+	<p>CSS animations smooth the transition when the mouse changes from hovered cell. Combining that with different margins on hover we get the movement</p>
+	<div class="grid animate">
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+		<div id="ball2" class="assets-ball"></div>
+	</div>
+	<p>To compute the relative movement based on distance (parallax) and generate the appropriate css for each cell, this project uses a simple JS script <a href="//github.com/obartra/cssmouseoverparallax/blob/master/js/services/cssGen.js">cssGen.js</a>.</p>
+	<p>Note that although this is a CSS only solution it doesn't mean it's necessarily performant, that's particularly true for high number of cells. Additionally, the number of css rules added grows quickly, following the following formula:</p>
+	<formula> horizontal_cells * vertical_cells * number_of_images</formula>
+</section>

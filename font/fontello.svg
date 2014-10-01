@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="sliders" unicode="&#xe800;" d="m0 404v35q0 23 16 38t38 16h178q22 0 38-16t16-38v-35q0-23-16-38t-38-16h-178q-23 0-38 16t-16 38z m71-465v375h143v-375q0-8-5-13t-13-5h-107q-7 0-13 5t-5 13z m0 590v232q0 8 5 13t13 5h107q8 0 13-5t5-13v-232h-143z m215-411v36q0 22 15 38t38 15h179q22 0 38-15t15-38v-36q0-22-15-38t-38-16h-179q-22 0-38 16t-15 38z m71-89h143v-90q0-8-5-13t-13-5h-107q-8 0-13 5t-5 13v90z m0 214v518q0 8 5 13t13 5h107q8 0 13-5t5-13v-518h-143z m214 303v36q0 22 16 38t38 16h179q22 0 38-16t15-38v-36q0-22-15-38t-38-15h-179q-22 0-38 15t-16 38z m72-607v518h143v-518q0-8-5-13t-13-5h-107q-8 0-13 5t-5 13z m0 732v90q0 8 5 13t13 5h107q8 0 13-5t5-13v-90h-143z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>

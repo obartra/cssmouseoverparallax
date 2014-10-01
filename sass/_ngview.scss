@@ -1,0 +1,39 @@
+ng-view{
+	position: absolute;
+	top: 50px;
+	left:0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	&.ng-enter,
+	&.ng-leave {
+		@include transition(all 0.3s ease-in);
+	}
+	&.ng-enter {
+		opacity: 0;
+		@include transform(scale(0.95));
+		section{
+			overflow: visible;
+		}
+	}
+	&.ng-enter-active {
+		opacity: 1;
+		@include transform(scale(1));
+	}
+	&.ng-leave {
+		left: 0;
+		opacity: .5;
+	}
+	&.ng-leave-active {
+		opacity: 0;
+		section{
+			overflow: visible;
+		}
+	}
+}
+
+@media screen and (max-width: 850px){
+	ng-view{
+		top: 83px;
+	}
+}

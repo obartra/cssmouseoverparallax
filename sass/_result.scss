@@ -1,0 +1,32 @@
+.result{
+	bottom: 0;
+	.cell{
+		position: relative;
+		float: left;
+		z-index: 10;
+	}
+	&.showGrid .cell{
+		@include transition(all 0.3s ease-in);
+		&:hover{
+			background: $cellcolor;
+			opacity: 0.5;
+		}
+	}
+	.background{
+		position: absolute;
+		z-index: -5;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background-color: $peargreen;
+	}
+	.item{
+		position: absolute;
+		border: 1px solid transparent;
+		@include transition(border-color 0.1s ease-in);
+		&.hover{
+			border-color: $bordercolor;
+		}
+	}
+}

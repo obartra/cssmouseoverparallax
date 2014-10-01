@@ -1,0 +1,15 @@
+<h1>Pure CSS Mouseover Parallax</h1>
+<button
+	class="optionstoggle icon-sliders"
+	ng-click="$root.showOptions = !$root.showOptions"
+	ng-class="{ active: $root.showOptions }"
+	title="{{$root.showOptions? 'Hide Options' : 'Show Options'}}"
+><label>Settings</label></button>
+<nav>
+	<ul>
+		<li><a href="/" ng-class="{active: $root.view === 'result'}">Rendered</a></li>
+		<li><a href="/css" ng-class="{active: $root.view === 'css'}">Css</a></li>
+		<li><a href="/howto" ng-class="{active: $root.view === 'howto'}">How-To</a></li>
+		<li><a href="//github.com/obartra/cssmouseoverparallax" target="_blank">View on Github</a></li>
+	</ul>
+</nav>

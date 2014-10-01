@@ -1,0 +1,98 @@
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 49px;
+	border-bottom: 1px solid $peargreen;
+	z-index: 11;
+	background-color: $darkgreen;
+	color: $peargreen;
+	@include transition(all 0.3s ease-in);
+	h1{
+		margin: 10px;
+		float: left;
+	}
+	button label{
+		cursor: pointer;
+	}
+	.optionstoggle{
+		position: relative;
+		margin: 10px;
+		padding: 0;
+		height: 30px;
+		font-size: 18px;
+		border: 1px solid transparent;
+		color: $peargreen;
+		@include border-radius(2px);
+		@include transition(all 0.3s ease-in);
+		&:hover{
+			border-color: $peargreen;
+			border-width: 1px;
+		}
+		&.active{
+			border-color: $darkgreen;
+			background-color: $peargreen;
+			color: $darkgreen;
+		}
+		background: none;
+		cursor: pointer;
+		outline: none;
+		padding-right: 6px;
+	}
+	nav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		ul{
+			margin: 10px;
+			li{
+				float: left;
+				list-style: none;
+				padding: 6px;
+				a{
+					text-decoration: none;
+					@include transition(all 0.3s ease-in);
+					font-size: 15px;
+					cursor: pointer;
+					color: $peargreen;
+					&.active{
+						font-weight: bold;
+						color: $pink;
+					}
+					&:hover{
+						color: $pink;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 740px) {
+	header h1{
+		margin-top: 16px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 850px){
+	header nav{
+		top: 50px;
+		background-color: $darkgreen;
+		border-bottom: 1px solid $peargreen;
+		z-index: 35;
+		line-height: 0px;
+		width: 100%;
+		ul{
+			float: right;
+		}
+	}
+}
+@media screen and (max-width: 350px){
+	header button label{
+		display: none;
+	}
+	header nav ul li a{
+		font-size: 12px;
+	}
+}

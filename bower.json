@@ -1,0 +1,34 @@
+{
+  "name": "cssmouseoverparallax",
+  "version": "0.0.0",
+  "authors": [
+    "Oscar <obartra@gmail.com>"
+  ],
+  "description": "Pure CSS mouse over parallax solution",
+  "keywords": [
+    "css",
+    "parallax"
+  ],
+  "main": "js/main.js",
+  "license": "MIT",
+  "homepage": "cssmouseoverparallax.appspot.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.22",
+    "requirejs": "~2.1.14",
+    "requirejs-text": "~2.0.12",
+    "requirejs-plugins": "~1.0.2",
+    "prismjs": "*",
+    "angular-route": "~1.2.25",
+    "lodash": "~2.4.1",
+    "angular-animate": "~1.2.25",
+    "modernizr": "~2.8.3"
+  },
+  "directory": "vendor"
+}

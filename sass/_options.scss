@@ -1,0 +1,75 @@
+.hidepopup .popup{
+	width: 0;
+	padding: 0;
+	cursor: pointer;
+	opacity: 0;
+}
+.popup{
+	position: absolute;
+	font-size: 12px;
+	color: $darkgreen;
+	background-color: $white;
+	top:50px;
+	left: 0;
+	bottom: 0;
+	width: #{$popupwidth}px;
+	overflow: hidden;
+	z-index: 11;
+	opacity: 1;
+	padding: #{$popuppadding}px;
+	border-right: 1px solid $peargreen;
+	@include transition(all 0.3s ease-in);
+	&:hover{
+		overflow-y: auto;
+	}
+	h2{
+		color: $pink;
+	}
+	ul, li{
+		padding: 0;
+		margin: 0;
+		height: auto;
+		opacity: 1;
+		list-style: none;
+		@include transition(all 0.3s ease-in);
+	}
+	li{
+		padding: 5px 0;
+	}
+	label{
+		cursor: pointer;
+		&.noleftbox{
+			margin-left: 20px;
+		}
+	}
+	.indent{
+		padding-left: 20px;
+	}
+	input[type="number"],
+	input[type="text"]{
+		width: 50px;
+	}
+	input[type="checkbox"]{
+		position: relative;
+		top: 3px;
+	}
+	input,
+	select{
+		@include border-radius(2px);
+		border-width: 1px;
+		border-color: $pink;
+		padding: 1px;
+	}
+	select{
+		min-width: 50px;
+	}
+	.item-options{
+		@include transition(all 0.3s ease-in);
+		label{
+			padding: 5px;
+		}
+		&:hover{
+			background-color: $itemhovercolor;
+		}
+	}
+}

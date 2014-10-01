@@ -1,0 +1,45 @@
+application: cssmouseoverparallax
+version: 1
+runtime: php
+api_version: 1
+default_expiration: "7d"
+
+handlers:
+- url: /favicon.ico
+  mime_type: image/x-icon
+  static_files: favicon.ico
+  upload: favicon.ico
+  expiration: "365d"
+
+# static content folders
+- url: /css
+  static_dir: css
+  application_readable: true
+- url: /templates
+  static_dir: templates
+  application_readable: true
+- url: /sass
+  static_dir: sass
+  application_readable: true
+- url: /model
+  static_dir: model
+  application_readable: true
+- url: /vendor
+  static_dir: vendor
+  application_readable: true
+- url: /font
+  static_dir: font
+  application_readable: true
+- url: /img
+  static_dir: img
+  application_readable: true
+- url: /js
+  static_dir: js
+  application_readable: true
+
+- url: /dev
+  script: index.php
+- url: /old
+  script: old.html
+- url: /.*
+  script: index.html

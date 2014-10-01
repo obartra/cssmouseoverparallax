@@ -1,0 +1,63 @@
+.howto{
+	padding: 40px;
+	overflow: visible;
+	max-width: 800px;
+	margin: auto;
+	formula{
+		text-align: center;
+		display: block;
+		font-family: Consolas, monaco, monospace;
+	}
+	li{
+		list-style-type: square;
+	}
+	a{
+		color: $pink;
+		text-decoration: none;
+		@include transition(all 0.3s ease-in);
+		&:hover{
+			color: $peargreen;
+		}
+	}
+	.grid{
+		position: relative;
+		width: 208px;
+		height: 208px;
+		margin: auto;
+		.cell{
+			width: 24%;
+			height: 24%;
+			float: left;
+			border-right: 2px solid $cellcolor;
+			border-bottom: 2px solid $cellcolor;
+			@include transition(all 0.3s ease-in);
+			&:hover{
+				background: $cellcolor;
+			}
+			&:nth-child(4n){
+				border-right: 0;
+			}
+			&:nth-child(13),
+			&:nth-child(14),
+			&:nth-child(15),
+			&:nth-child(16){
+				border-bottom: none;
+			}
+		}
+		#ball,
+		#ball2{
+			position: absolute;
+			z-index: -1;
+			width: 50px;
+			height: 50px;
+		}
+		#ball{
+			top: 20px;
+			left: 40px;
+		}
+		#ball2{
+			top: 104px;
+			left: 103px;
+		}
+	}
+}

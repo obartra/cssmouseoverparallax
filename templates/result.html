@@ -1,0 +1,25 @@
+<section
+	ng-controller="ResultCtrl"
+	class="result"
+	ng-class="{
+		hPar: options.hParallax,
+		vPar: options.vParallax,
+		showGrid: options.showGrid
+	}"
+>
+	<div index="{{$index}}" ng-repeat="t in totalCells track by $index" class="cell"></div>
+
+	<div
+		ng-cloak
+		ng-repeat="item in $root.itemList"
+		class="item assets-{{item.type}}"
+		id="{{item.id | nohash}}"
+		ng-class="{hover : item.hover}"
+		ng-style="{
+			top: item.top + '%',
+			left: item.left + '%',
+			'z-index' : (1 - item.depth)
+		}"
+	></div>
+	<div class="background"></div>
+</section>

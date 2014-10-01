@@ -1,0 +1,10 @@
+/css/
+/vendor/
+/img/*.png
+/node_modules/
+/js/vendor/
+/grunt/tmp/
+/.sass-cache/
+/.git/
+/js/main.min.js
+/index.html

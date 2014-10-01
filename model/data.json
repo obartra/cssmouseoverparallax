@@ -1,0 +1,44 @@
+{
+	"options" : {
+		"hParallax" : true,
+		"vParallax" : true,
+		"showGrid" : false,
+		"hCells" : 7,
+		"vCells" : 7,
+		"vMovementPct" : 15,
+		"hMovementPct" : 30,
+		"speed" : 0.6,
+		"easing" : "linear"
+	},
+	"showOptions" : true,
+	"menuOptions" : {
+		"depths" : [1,2,3,4,5],
+		"easing" : ["linear", "ease", "ease-in", "ease-out", "ease-in-out"]
+	},
+	"itemList" : [{
+		"type": "cloud1",
+		"depth": 4,
+		"top": 25,
+		"left": 10
+	},{
+		"type": "cloud2",
+		"depth": 2,
+		"top": 75,
+		"left": 35
+	},{
+		"type": "cloud3",
+		"depth": 1,
+		"top": 15,
+		"left": 50
+	},{
+		"type": "cloud4",
+		"depth": 3,
+		"top": 50,
+		"left": 55
+	},{
+		"type": "land1",
+		"depth": 5,
+		"top": 35,
+		"left": 60
+	}]
+}

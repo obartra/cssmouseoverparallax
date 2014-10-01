@@ -1,0 +1,16 @@
+@import "compass/css3";
+@import "variables";
+
+body{
+	height: 100%;
+	background-color: $pink;
+	overflow: hidden;
+	text-align: center;
+	color: $darkgreen;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+}
+a{
+	text-decoration: none;
+	color: $peargreen;
+}

@@ -1,0 +1,56 @@
+@import "compass/css3";
+@import "variables";
+
+$assets-spacing: 2px;
+$assets-sprite-dimensions: true;
+@import "../img/assets/*.png";
+@include all-assets-sprites;
+
+html{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 12px;
+}
+
+html,
+body{
+	position: absolute;
+	overflow: hidden;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-width: 320px;
+	font-size: 14px;
+}
+
+section{
+	position: absolute;
+	top: 0;
+	left: #{$popupwidth+$popuppadding*2}px;
+	right: 0;
+	overflow: hidden;
+	@include transition(all 0.3s ease-in);
+}
+.hidepopup section{
+	left: 0;
+}
+@media screen and (max-width: 700px){
+	section{
+		left: 0;
+	}
+}
+
+@import "fontello";
+@import "ngview";
+@import "loading";
+@import "header";
+@import "options";
+@import "css";
+@import "result";
+@import "howto";
+@import "errors";
+
+@import "CSS:prismjs/prism";
+@import "CSS:prismjs/prism-okaidia";
+@import "CSS:prismjs/plugins/line-numbers/prism-line-numbers";
